@@ -84,6 +84,43 @@ if __name__ == "__main__":
 ## Representación en RAM del objeto creado
 ![alt text](img/ram.jpeg)
 
+## Composición
+- Cosiste en la creación de nuevas clases apartir de otras clases ya existentes que actuan como elementos compositores de la nueva OwO
+
+- Las clases existentes serán atributos de la nueva clases
+
+### Ejemplo:
+- Una **coordenada** en 2 dimensiones está compuesta por 2 valores; El valor en el eje de las axisas y el valor en el eje de las Y, esto podría ser una clase
+
+- un cuadrado está compuesto por cuatro coordenadas que son los vértices, esto podría ser una clase compuesta por cuatro clases del objeto **coordenada**
+
+### Código Python
+```Python
+#Ayo bro chill!
+class coordenada:
+    # metodo constructor UwU
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    # método gatuncito
+    def show():
+        print("(", self.x, self.y")")
+
+class cuadrado:
+    def __init__(self, v1, v2, v3, v4):
+        self.v1 = v1
+        self.v2 = v2
+        self.v3 = v3
+        self.v4 = v4
+    
+    def show(self):
+        print("el cuadrado está compuesto por los siguientes vértices: ")
+        self.v1.show()
+        self.v2.show()
+        self.v3.show()
+        self.v4.show()
+```
 
 
 

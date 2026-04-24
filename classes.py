@@ -1,6 +1,4 @@
 class Human:
-
-    # método constructor de la clase ÙwÚ
     def __init__(self, nombre, apellidos, edad):
         self.nombre = nombre
         self.apellidos = apellidos
@@ -12,13 +10,28 @@ class Human:
         print("apellidos: " + self.apellidos)
         print("edad: " + str(self.edad))
 
-"""
-def main():
-    print("vamos a aprender POO...")
-    persona_1 = Human("Pedro", "Pérez Pereira", 30)
-    persona_1.show()
 
-if __name__ == "__main__":
-    main()
+class coordenada:
+    # metodo constructor UwU
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    # método gatuncito
+    def show(self):
+        print("(", self.x, self.y, ")")
 
-"""
+
+class cuadrado:
+    def __init__(self, v1, v2, v3, v4):
+        self.v1 = v1
+        self.v2 = v2
+        self.v3 = v3
+        self.v4 = v4
+    
+    def show(self):
+        print("el cuadrado está compuesto por los siguientes vértices: ")
+        self.v1.show()
+        self.v2.show()
+        self.v3.show()
+        self.v4.show()
