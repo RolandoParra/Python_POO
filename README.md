@@ -122,6 +122,58 @@ class cuadrado:
         self.v4.show()
 ```
 
+## Representación en ram de la composición
+
+
+## Encapsulación
+- Uno de los objetivos que tiene la POO es proteger los datos de acceso o usos no controlados y esto es lo que se conoce como **encapsulación**
+
+- Los datos que componen una clase pueden ser de 2 tipos
+    - **Públicos:** Los datos son accesibles sin control, es decir, los datos pueden ser usados sin ningún tipo de mecanismo que proteja ante usos no autorisados  indevidos
+    - **Privados:** Los datos no pueden ser accedidos sin control y para acceder a ellos se deberá implementar un método que acceda a ellos, de esta manera, los datos únicamente serán accedidos directamente por la propia clase
+
+- La encapsulación tambien puede realizarse sobre los métodos
+
+- La dfinición de atributos privados se realiza incluyendo los caracteres "__"(2 "_" :P) entre la palabra **self** y el nombre del atributo
+
+### Ejemplo
+```Python
+#Ayo bro chill!
+class coordenada:
+    # metodo constructor UwU
+    def __init__(self, x, y):
+        #estos 2 atributos son privados
+        self.__x = x
+        self.__y = y
+
+    #metodo e acceso
+    def getX(self):
+        return self.__x
+    def setX(self):
+        self.__x = x
+    def getY(self):
+        return self.__y
+    def setY(self):
+        self.__y = y
+    
+    # método gatuncito
+    def show():
+        print("(", self.__x, self.__y")")
+
+class cuadrado:
+    def __init__(self, v1, v2, v3, v4):
+        self.v1 = v1
+        self.v2 = v2
+        self.__v3 = v3
+        self.v4 = v4
+    
+    def show(self):
+        print("el cuadrado está compuesto por los siguientes vértices: ")
+        self.v1.show()
+        self.v2.show()
+        self.v3.show()
+        self.v4.show()
+```
 
 
 
