@@ -1,4 +1,4 @@
-from programa import Human
+from classes import Human
 
 juan = Human("Pedro", "Perez Pereira", 387)
 juan.show()
