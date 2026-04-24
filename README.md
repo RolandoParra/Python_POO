@@ -82,12 +82,12 @@ if __name__ == "__main__":
 ```
 
 ## Representación en RAM del objeto creado
+![alt text](img/ram.jpeg)
 
 
 
 
 
 
-
-
+## Foto del creador de las computadoras:
 ![alt text](img/importante.jpeg)
